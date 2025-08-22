@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watch Collection</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="p-0 m-0 bg-black text-white">
+    <header>
+      <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/Subject.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      My Watch Collection</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main>
+    <div class="fs-1 text-center p-5">
+        <p style="font-family: fantasy;">Suggest a Watch</p>
+    </div>
+    <div class="d-flex justify-content-center">
+        <form class="row g-3 needs-validation card shadow p-4 text-center border-warning" style="width: 600px; height: 600px;" novalidate>
+            <div class="col-md-12 position-relative text-start ">
+                <label for="validationTooltip01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationTooltip01" placeholder="First Name" required>
+                <div class="valid-tooltip">
+                Looks good!
+                </div>
+            </div>
+            <div class="col-md-12 position-relative text-start ">
+                <label for="validationTooltip02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationTooltip02" placeholder="Last Name" required>
+                <div class="valid-tooltip">
+                Looks good!
+                </div>
+            </div>
+            <div class="col-md-12 position-relative text-start ">
+                <label for="validationTooltip03" class="form-label">Watch Suggestion</label>
+                <input type="text" class="form-control" id="validationTooltip03" placeholder="Watch" required>
+            </div>
+            <div class="form-floating">
+                <textarea maxlength="500" class="form-control custom-text-area" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px;"></textarea>
+                <label for="floatingTextarea">Additional Notes</label>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit Watch</button>
+            </div>
+        </form>
+ </div>
+        
+    </main>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+<footer>
+    <p class="text-secondary text-center">Alejandro Aleman</p>
+</footer>
+</html>
