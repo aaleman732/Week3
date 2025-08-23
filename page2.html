@@ -27,11 +27,21 @@
 </nav>
     </header>
     <main>
+      <!--Page title section:
+          fs-1 -> very large font size
+          text center -> center text
+          p-5 -> big padding -->
     <div class="fs-1 text-center p-5">
         <p style="font-family: fantasy;">Suggest a Watch</p>
     </div>
+    <!-- Form wrapper:
+         d-flex + justify-content-center -> horizontally center the form card -->
     <div class="d-flex justify-content-center">
-        <form class="row g-3 needs-validation card shadow p-4 text-center border-warning" style="width: 600px; height: 600px;" novalidate>
+        <form class="row g-3 needs-validation card shadow p-4 text-center border-warning col-4" novalidate>
+          <!-- First name field:
+             col-md-12 -> full width on md+
+             position-relative
+             text-start -> align labels and inputs to the left -->
             <div class="col-md-12 position-relative text-start ">
                 <label for="validationTooltip01" class="form-label">First name</label>
                 <input type="text" class="form-control" id="validationTooltip01" placeholder="First Name" required>
@@ -50,6 +60,10 @@
                 <label for="validationTooltip03" class="form-label">Watch Suggestion</label>
                 <input type="text" class="form-control" id="validationTooltip03" placeholder="Watch" required>
             </div>
+            <!-- Floating textarea:
+             form-floating -> label floats inside the textarea
+             maxlength=500 -> limit text to 500 characters
+             Inline height sets box height -->
             <div class="form-floating">
                 <textarea maxlength="500" class="form-control custom-text-area" placeholder="Leave a comment here" id="floatingTextarea" style="height: 200px;"></textarea>
                 <label for="floatingTextarea">Additional Notes</label>
@@ -61,10 +75,10 @@
  </div>
         
     </main>
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-</body>
 <footer>
     <p class="text-secondary text-center">Alejandro Aleman</p>
 </footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
 </html>
