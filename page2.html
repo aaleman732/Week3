@@ -38,27 +38,22 @@
          d-flex + justify-content-center -> horizontally center the form card -->
     <div class="d-flex justify-content-center">
         <form class="row g-3 needs-validation card shadow p-4 text-center border-warning col-4" novalidate>
-          <!-- First name field:
-             col-md-12 -> full width on md+
-             position-relative
-             text-start -> align labels and inputs to the left -->
-            <div class="col-md-12 position-relative text-start ">
-                <label for="validationTooltip01" class="form-label">First name</label>
-                <input type="text" class="form-control" id="validationTooltip01" placeholder="First Name" required>
-                <div class="valid-tooltip">
-                Looks good!
-                </div>
+           <!-- A simple form section with tree text inputs -->
+            <!-- Text input 
+                .form-control = Bootstrap styling
+                id = unique identifier (links to the label)
+                placeholder   = hint text-->
+            <div class="mb-3 position-relative text-start">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="First Name">
             </div>
-            <div class="col-md-12 position-relative text-start ">
-                <label for="validationTooltip02" class="form-label">Last name</label>
-                <input type="text" class="form-control" id="validationTooltip02" placeholder="Last Name" required>
-                <div class="valid-tooltip">
-                Looks good!
-                </div>
+            <div class="mb-3 position-relative text-start">
+              <label for="lastName" class="form-label">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Last name">
             </div>
-            <div class="col-md-12 position-relative text-start ">
-                <label for="validationTooltip03" class="form-label">Watch Suggestion</label>
-                <input type="text" class="form-control" id="validationTooltip03" placeholder="Watch" required>
+            <div class="mb-3 position-relative text-start">
+              <label for="watchBrand" class="form-label">Watch Brand</label>
+              <input type="text" class="form-control" id="watchBrand" placeholder="Watch Brand">
             </div>
             <!-- Floating textarea:
              form-floating -> label floats inside the textarea
